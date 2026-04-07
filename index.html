@@ -6,7 +6,88 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
+    <!-- Логотипы -->
+    <section class="logos">
+        <h2>Логотипы</h2>
+        <div class="logos-row">
+            <!-- Logo 1: Mickey Mouse (3 круга) -->
+            <div class="logo-box">
+                <div class="mickey">
+                    <div class="mickey-head"></div>
+                    <div class="mickey-ear mickey-ear-left"></div>
+                    <div class="mickey-ear mickey-ear-right"></div>
+                </div>
+            </div>
+
+            <!-- Logo 3: Mitsubishi (3 ромба) -->
+            <div class="logo-box">
+                <div class="mitsubishi">
+                    <div class="mitsubishi-diamond mitsubishi-top"></div>
+                    <div class="mitsubishi-diamond mitsubishi-left"></div>
+                    <div class="mitsubishi-diamond mitsubishi-right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кнопка открытия модального окна -->
+    <section class="modal-section">
+        <button class="open-modal-btn" onclick="openModal()">Открыть модальное окно</button>
+    </section>
+
+    <!-- Модальное окно -->
+    <div class="overlay" id="overlay" onclick="closeModal()"></div>
+    <div class="modal" id="modal">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h2>Модальное окно</h2>
+
+        <!-- Прогресс-бар -->
+        <div class="progress-bar">
+            <div class="progress-bar-fill" id="progress-fill"></div>
+            <div class="progress-bar-text">
+                <span class="progress-text-black">Loading...</span>
+            </div>
+            <div class="progress-bar-text progress-bar-text-white">
+                <span>Loading...</span>
+            </div>
+        </div>
+
+        <!-- Аккордеон -->
+        <div class="accordion">
+            <div class="accordion-item">
+                <input type="checkbox" id="acc1" class="accordion-toggle">
+                <label for="acc1" class="accordion-header">Section 1</label>
+                <div class="accordion-content">
+                    <p>Современные технологии достигли такого уровня, что глубокий уровень погружения создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий. Идейные соображения высшего порядка, а также высокое качество позиционных исследований позволяет выполнить важные задания по разработке модели развития.</p>
+                    <ul>
+                        <li>Пункт первый</li>
+                        <li>Пункт второй</li>
+                        <li>Пункт третий</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="checkbox" id="acc2" class="accordion-toggle">
+                <label for="acc2" class="accordion-header">Section 2</label>
+                <div class="accordion-content">
+                    <p>Не следует, однако, забывать, что начало повседневной работы по формированию позиции обеспечивает широкому кругу специалистов участие в формировании стандартных подходов. Равным образом, постоянный количественный рост и сфера нашей деятельности влечёт за собой процесс внедрения и модернизации дальнейших направлений развития.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="checkbox" id="acc3" class="accordion-toggle">
+                <label for="acc3" class="accordion-header">Section 3</label>
+                <div class="accordion-content">
+                    <p>Разнообразный и богатый опыт говорит нам, что граница обучения кадров напрямую зависит от направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности играет определяющее значение для позиций, занимаемых нашими участниками.</p>
+                    <ul>
+                        <li>Элемент списка один</li>
+                        <li>Элемент списка два</li>
+                        <li>Элемент списка три</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
